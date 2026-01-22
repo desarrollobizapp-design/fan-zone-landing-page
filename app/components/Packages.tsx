@@ -31,7 +31,7 @@ export default function PaquetesBIZ() {
         {/* Encabezado idéntico al que te funcionó */}
         <div className="mb-16">
           <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4">
-            NUESTROS <span className="text-blue-600">MODELOS</span>
+            NUESTROS <span className="text-green-600">MODELOS</span>
           </h2>
           <p className="text-gray-600 max-w-xl font-bold uppercase tracking-widest text-sm">
             Infraestructura de élite para eventos municipales masivos.
@@ -45,7 +45,7 @@ export default function PaquetesBIZ() {
               className="flex flex-col bg-white rounded-3xl border border-gray-100 shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
             >
               {/* HEADER AZUL (Usando clases estándar) */}
-              <div className="bg-blue-600 h-32 relative flex justify-center items-center">
+              <div className="bg-green-600 h-32 relative flex justify-center items-center">
                 {/* Círculo del icono flotando */}
                 <div className={`w-20 h-20 ${p.color} rounded-full border-4 border-white shadow-xl flex items-center justify-center absolute -bottom-10`}>
                   {p.icon}
@@ -69,7 +69,7 @@ export default function PaquetesBIZ() {
                   <ul className="inline-block text-left space-y-4">
                     {p.caracteristicas.map((feat, idx) => (
                       <li key={idx} className="flex items-start gap-3 text-sm text-gray-600">
-                        <Check className="w-5 h-5 shrink-0 text-blue-600" />
+                        <Check className="w-5 h-5 shrink-0 text-green-600" />
                         <span className="font-medium">{feat}</span>
                       </li>
                     ))}
@@ -77,7 +77,7 @@ export default function PaquetesBIZ() {
                 </div>
 
                 {/* BOTÓN (Usando el estilo de View More de tu imagen) */}
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl shadow-lg transition-colors flex items-center justify-center gap-2">
+                <button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl shadow-lg transition-colors flex items-center justify-center gap-2">
                   COTIZAR <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
