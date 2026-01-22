@@ -26,7 +26,7 @@ export default function Home() {
 
           {/* Descripción */}
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-400 mb-10 leading-relaxed">
-            La plataforma definitiva para los verdaderos fans del fútbol.
+            El lugar definitiva para los verdaderos fans del fútbol.
             <br />
             Una experiencia única e inolvidable.
           </p>
