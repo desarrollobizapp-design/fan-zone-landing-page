@@ -4,20 +4,19 @@ export default function QueEsZonaFest() {
   return (
     <section className="py-24 bg-zinc-950 text-white overflow-hidden">
       <div className="container mx-auto px-6">
-        {/* Encabezado de la sección */}
-        <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-black tracking-tighter uppercase mb-4">
+        {/* Encabezado */}
+        <div className="mb-20">
+          <h2 className="text-4xl md:text-6xl font-black tracking-tighter uppercase mb-4">
             ¿Qué es <span className="text-green-500">Zona Fest</span>?
           </h2>
-          <div className="h-1 w-20 bg-green-500"></div>
+          <div className="h-1.5 w-24 bg-green-500 rounded-full"></div>
         </div>
 
-        {/* Contenido en Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
           {/* Columna de Texto */}
-          <div className="space-y-8">
-            <div className="group">
+          <div className="space-y-10">
+            <div className="group border-l-2 border-white/5 pl-6 hover:border-green-500 transition-colors">
               <h3 className="text-2xl font-bold text-green-400 mb-2">Modelo Integral</h3>
               <p className="text-gray-400 leading-relaxed">
                 Diseñamos una solución 360° que abarca desde el montaje técnico hasta la gestión de audiencias. 
@@ -25,7 +24,7 @@ export default function QueEsZonaFest() {
               </p>
             </div>
 
-            <div className="group">
+            <div className="group border-l-2 border-white/5 pl-6 hover:border-green-500 transition-colors">
               <h3 className="text-2xl font-bold text-green-400 mb-2">Operación Centralizada</h3>
               <p className="text-gray-400 leading-relaxed">
                 Coordinamos cada detalle de la producción, sonido y logística desde un solo mando operativo, 
@@ -33,46 +32,48 @@ export default function QueEsZonaFest() {
               </p>
             </div>
 
-            {/* Punto clave para Gobiernos */}
-            <div className="p-6 bg-white/5 border-l-4 border-yellow-400 rounded-r-xl">
+            <div className="p-8 bg-linear-to-br from-white/5 to-transparent border border-white/10 rounded-2xl relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-400/10 blur-3xl group-hover:bg-yellow-400/20 transition-all"></div>
               <h3 className="text-xl font-black mb-2 uppercase italic text-yellow-400">Un solo responsable</h3>
-              <p className="text-gray-300 text-sm">
-                Simplificamos la administración pública: BIZ se encarga de la relación con proveedores y la ejecución técnica. 
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Simplificamos la administración pública: <span className="text-white font-bold">BIZ</span> se encarga de la relación con proveedores y la ejecución técnica. 
                 Menos burocracia, más resultados.
               </p>
             </div>
 
-            <div className="group">
+            <div className="group border-l-2 border-white/5 pl-6 hover:border-green-500 transition-colors">
               <h3 className="text-2xl font-bold text-green-400 mb-2">El estadio en tu municipio</h3>
               <p className="text-gray-400 leading-relaxed">
                 Llevamos la atmósfera de los mejores estadios del mundo a las plazas públicas de forma 
-                <span className="text-white font-semibold"> segura y organizada</span>.
+                <span className="text-white font-semibold italic"> segura y organizada</span>.
               </p>
             </div>
           </div>
 
-          {/* Columna de Imágenes con efecto de profundidad */}
-          <div className="relative">
-            {/* Imagen principal (Noche) */}
-            <div className="relative z-10 rounded-2xl overflow-hidden border border-white/10 shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+          {/* Columna de Imágenes con Composición de Impacto */}
+          <div className="relative perspective-1000">
+            {/* Imagen principal (Noche) - Inclinada y con sombra fuerte */}
+            <div className="relative z-20 rounded-3xl overflow-hidden border-2 border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform -rotate-3 hover:rotate-0 transition-all duration-700">
               <img 
                 src="https://dbdzlutmtlpbiern.public.blob.vercel-storage.com/zonaFestNoche.jpeg" 
                 alt="Evento Zona Fest de noche" 
-                className="w-full h-80 object-cover"
+                className="w-full h-112.5 object-cover scale-110 group-hover:scale-100 transition-transform duration-700"
               />
+              <div className="absolute inset-0 bg-linear-to-t from-zinc-950/60 to-transparent"></div>
             </div>
             
-            {/* Imagen secundaria (Día) - Oculta en móviles pequeños para mejor UX */}
-            <div className="absolute -bottom-10 -left-10 z-20 w-2/3 rounded-2xl overflow-hidden border border-white/10 shadow-2xl hidden md:block transform hover:translate-y-2.5 transition-transform duration-500">
+            {/* Imagen secundaria (Día) - Posición flotante agresiva */}
+            <div className="absolute -bottom-12 -right-6 z-30 w-2/3 rounded-3xl overflow-hidden border-2 border-white/30 shadow-2xl hidden md:block transform rotate-6 hover:rotate-0 transition-all duration-700 hover:scale-105">
               <img 
                 src="https://dbdzlutmtlpbiern.public.blob.vercel-storage.com/zonaFestDia.jpeg" 
                 alt="Evento Zona Fest de día" 
-                className="w-full h-80 object-cover"
+                className="w-full h-64 object-cover"
               />
             </div>
 
-            {/* Efecto de resplandor verde de fondo */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-green-500/10 blur-[100px] -z-10"></div>
+            {/* Decoración de fondo: Glows de BIZ */}
+            <div className="absolute -top-20 -right-20 w-64 h-64 bg-green-500/20 blur-[120px] rounded-full animate-pulse"></div>
+            <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-green-600/10 blur-[120px] rounded-full"></div>
           </div>
 
         </div>

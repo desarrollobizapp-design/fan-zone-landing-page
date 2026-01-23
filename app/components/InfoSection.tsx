@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Clapperboard, ShieldCheck, Balloon, HandHelping } from 'lucide-react';
+
 export default function InfoSection() {
   return (
     <section className="py-24 bg-white text-black">
@@ -20,8 +22,8 @@ export default function InfoSection() {
           
           {/* Tarjeta 1: Pantallas */}
           <div className="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center text-white mb-4 text-2xl shadow-lg shadow-green-600/20">
-              📽️
+            <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center text-white mb-4 text-2xl shadow-lg shadow-green-600/20">              
+              <Clapperboard className="w-6 h-6 text-gray-700 fill-black" />              
             </div>
             <h3 className="font-bold text-lg mb-2">Pantallas de Gran Formato</h3>
             <p className="text-gray-600 text-sm">
@@ -31,8 +33,8 @@ export default function InfoSection() {
 
           {/* Tarjeta 2: Logística */}
           <div className="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center text-white mb-4 text-2xl shadow-lg shadow-green-600/20">
-              🛡️
+            <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center text-white mb-4 text-2xl shadow-lg shadow-green-600/20">              
+              <ShieldCheck className="w-6 h-6 text-gray-700 fill-black" />              
             </div>
             <h3 className="font-bold text-lg mb-2">Logística y Seguridad</h3>
             <p className="text-gray-600 text-sm">
@@ -43,7 +45,7 @@ export default function InfoSection() {
           {/* Tarjeta 3: Animación */}
           <div className="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
             <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center text-white mb-4 text-2xl shadow-lg shadow-green-600/20">
-              📣
+              <Balloon className="w-6 h-6 text-gray-700 fill-black" />
             </div>
             <h3 className="font-bold text-lg mb-2">Animación y Talento</h3>
             <p className="text-gray-600 text-sm">
@@ -54,7 +56,7 @@ export default function InfoSection() {
           {/* Tarjeta 4: Soporte BIZ */}
           <div className="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
             <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center text-white mb-4 text-2xl shadow-lg shadow-green-600/20">
-              ⚙️
+              <HandHelping className="w-6 h-6 text-gray-700 fill-black" />
             </div>
             <h3 className="font-bold text-lg mb-2">Soporte Digital BIZ</h3>
             <p className="text-gray-600 text-sm">

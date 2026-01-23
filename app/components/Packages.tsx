@@ -34,7 +34,7 @@ export default function PaquetesBIZ() {
             NUESTROS <span className="text-green-600">MODELOS</span>
           </h2>
           <p className="text-gray-600 max-w-xl font-bold uppercase tracking-widest text-sm">
-            Infraestructura de élite para eventos municipales masivos.
+            Infraestructura de élite {/*para eventos municipales masivos*/}.
           </p>
         </div>
 
@@ -44,25 +44,25 @@ export default function PaquetesBIZ() {
               key={i} 
               className="flex flex-col bg-white rounded-3xl border border-gray-100 shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
             >
-              {/* HEADER AZUL (Usando clases estándar) */}
+              {/* HEADER VERDE */}
               <div className="bg-green-600 h-32 relative flex justify-center items-center">
+                <h3 className="text-3xl font-black italic text-center mb-8 uppercase tracking-tight text-white">
+                  {p.nombre}
+                </h3>
                 {/* Círculo del icono flotando */}
                 <div className={`w-20 h-20 ${p.color} rounded-full border-4 border-white shadow-xl flex items-center justify-center absolute -bottom-10`}>
                   {p.icon}
                 </div>
                 
-                {p.popular && (
+                {/*p.popular && (
                   <span className="absolute top-4 right-4 bg-yellow-400 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase">
                     Popular
                   </span>
-                )}
+                )*/}
               </div>
 
               {/* CONTENIDO */}
               <div className="px-8 pt-16 pb-10 flex flex-col grow">
-                <h3 className="text-2xl font-black italic text-center mb-8 uppercase tracking-tight text-gray-800">
-                  {p.nombre}
-                </h3>
 
                 {/* LISTA ALINEADA (El bloque se centra, el texto va a la izquierda) */}
                 <div className="flex justify-center mb-10 grow">

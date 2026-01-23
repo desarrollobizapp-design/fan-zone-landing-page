@@ -10,7 +10,6 @@ export default function Home() {
       <InfoSection />
       <QueEsZonaFest />
       <Packages />
-
     </main>
   );
 }
