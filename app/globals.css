@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Fondo principal usando tu verde oscuro */
+  --background: #00381F; 
+  /* Blanco secundario (ligeramente grisáceo para elegancia) */
+  --foreground: #F8FAF9; 
+  
+  /* Tu paleta personalizada */
+  --primario: #00381F;    /* Verde obscuro*/
+  --secondario: #10B981;  /* Verde claro*/
+  --terciario: #F8FAF9;     /* Blanco*/
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  
+  /* Clases personalizadas: bg-primary, text-secondary, etc. */
+  --color-primario: var(--primario);
+  --color-secondario: var(--secondario);
+  --color-terciario: var(--terciario);
+  
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-/*@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}*/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
+
+/* Mejora la legibilidad de los párrafos en fondos oscuros */
+/*p {
+  color: rgba(248, 250, 249, 0.8);
+}*/
+
+/* Selección de texto con tu nueva paleta */
+/*}::selection {
+  background-color: var(--secondary);
+  color: var(--primary);
+}*/

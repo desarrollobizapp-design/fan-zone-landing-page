@@ -1,4 +1,6 @@
 import React from 'react';
+import { Reveal } from "./Reveal";
+
 import { 
   Beer, 
   Orbit, 
@@ -14,29 +16,31 @@ import {
 
 export default function Escalabilidad() {
   const upgrades = [
-    { icon: <Beer className="text-yellow-400 fill-yellow-400/10" />, title: "Bar Personalizado", desc: "Media luna de domo exclusiva." },
-    { icon: <Orbit className="text-blue-400 fill-blue-400/10" />, title: "Domo Inmersivo", desc: "Experiencia 360° sensorial." },
-    { icon: <Star className="text-purple-400 fill-purple-400/10" />, title: "Talento Pro", desc: "Artistas nacionales e internacionales." },
-    { icon: <Cpu className="text-green-500 fill-green-500/10" />, title: "Portero Robótico", desc: "Tecnología de última generación." },
-    { icon: <Gamepad2 className="text-pink-500 fill-pink-500/10" />, title: "Zona Gamer", desc: "Múltiples consolas y torneos." },
-    { icon: <Target className="text-orange-500 fill-orange-500/10" />, title: "Cancha 3x3", desc: "Torneos relámpago en el sitio." },
-    { icon: <Zap className="text-yellow-500 fill-yellow-500/10" />, title: "Fuegos Artificiales", desc: "Show pirotécnico de clausura." },
-    { icon: <Users className="text-indigo-400 fill-indigo-400/10" />, title: "Convivencias", desc: "Meet & Greet con jugadores." },
+    { icon: <Beer className="text-white fill-yellow-400/10" />, title: "Bar Personalizado", desc: "Media luna de domo exclusiva." },
+    { icon: <Orbit className="text-white fill-blue-400/10" />, title: "Domo Inmersivo", desc: "Experiencia 360° sensorial." },
+    { icon: <Star className="text-white fill-purple-400/10" />, title: "Talento Pro", desc: "Artistas nacionales e internacionales." },
+    { icon: <Cpu className="text-white fill-green-500/10" />, title: "Portero Robótico", desc: "Tecnología de última generación." },
+    { icon: <Gamepad2 className="text-white fill-pink-500/10" />, title: "Zona Gamer", desc: "Múltiples consolas y torneos." },
+    { icon: <Target className="text-white fill-orange-500/10" />, title: "Cancha 3x3", desc: "Torneos relámpago en el sitio." },
+    { icon: <Zap className="text-white fill-yellow-500/10" />, title: "Fuegos Artificiales", desc: "Show pirotécnico de clausura." },
+    { icon: <Users className="text-white fill-indigo-400/10" />, title: "Convivencias", desc: "Meet & Greet con jugadores." },
   ];
 
   return (
-    <section className="py-24 text-white">
+    <section className="py-24 bg-terciario">
+
+    <Reveal>
       <div className="container mx-auto px-6">
         
         {/* Cabecera de Sección */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div>
-            <span className="text-black font-black tracking-[0.3em] uppercase text-xs">Potencia tu evento</span>
-            <h2 className="text-green-500 text-5xl md:text-7xl font-black tracking-tighter uppercase mt-2">
+            <span className="text-primario font-black tracking-[0.3em] uppercase text-xs">Potencia tu evento</span>
+            <h2 className="text-secondario text-5xl md:text-7xl font-black tracking-tighter uppercase mt-2">
               Escalabilidad {/*<span className="text-black/50 text-4xl md:text-6xl">BIZ</span>*/}
             </h2>
           </div>
-          <p className="max-w-md text-black text-sm leading-relaxed border-l-4 border-green-500 pl-6">
+          <p className="max-w-md text-primario text-sm leading-relaxed border-l-4 border-secondario pl-6">
             Lleva la experiencia al siguiente nivel. Módulos adaptables según la magnitud de tu plaza y audiencia.
           </p>
         </div>
@@ -46,13 +50,13 @@ export default function Escalabilidad() {
           {upgrades.map((item, index) => (
             <div 
               key={index} 
-              className="group p-8 bg-zinc-900 border border-white/5 rounded-3xl hover:bg-zinc-800 transition-all duration-300 hover:-translate-y-2"
+              className="group p-8 bg-primario border border-secondario rounded-3xl hover:bg-secondario transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="border-gray-700 border-2 w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <div className="border-secondario border-2 w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform hover:border-secondario">
                 {item.icon}
               </div>
               <h3 className="text-lg font-bold mb-2">{item.title}</h3>
-              <p className="text-gray-500 text-xs leading-relaxed group-hover:text-gray-300 transition-colors">
+              <p className="text-white text-xs leading-relaxed group-hover:text-primario transition-colors">
                 {item.desc}
               </p>
             </div>
@@ -75,6 +79,8 @@ export default function Escalabilidad() {
         </div>
 
       </div>
+    </Reveal>
+
     </section>
   );
 }
