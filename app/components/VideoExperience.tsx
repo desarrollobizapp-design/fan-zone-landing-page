@@ -10,13 +10,19 @@ export default function VideoExperience() {
             {/* Reducimos el ancho máximo para que el video no se estire y pixele */}
             <div id="video-experience" className="max-w-4xl mx-auto">
             
-            <div className="mb-10 flex items-center justify-between border-b border-accent/10 pb-4">
-                <h2 className="text-4xl font-black text-primario tracking-tighter uppercase italic">
+            <div className="mb-10 flex items-center justify-between border-b border-primario/10 pb-0">
+                <h2 className="text-5xl font-black text-primario tracking-tighter uppercase italic">
                 Vívelo en <span className="text-secondario">Grande</span>
                 </h2>
-                <span className="text-[12px] font-bold text-secondario tracking-widest uppercase">
-                ZONA FEST
-                </span>
+
+                {/* Contenedor del logo sin fondo negro y con tamaño equilibrado */}
+                <div className='flex items-center bg-primario rounded-2xl p-2'>
+                  <img 
+                    src="/ZonaFestLogo_SinFondo.png" 
+                    alt="Logo Zona Fest" 
+                    className="w-16 md:w-24 h-auto" 
+                  />
+                </div>
             </div>
 
             <div className="relative group">

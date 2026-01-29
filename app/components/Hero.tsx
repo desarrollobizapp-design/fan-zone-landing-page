@@ -5,7 +5,6 @@ import { Reveal } from "./Reveal";
 
 export default function Hero() {
 
-    // Función para el scroll suave hacia la sección del video
   const scrollToVideo = () => {
     const videoSection = document.getElementById('video-experience');
     if (videoSection) {
@@ -18,42 +17,46 @@ export default function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-black">
       
-      
-
-      {/* Filtro oscuro para mantener legibilidad */}
       <div className="absolute inset-0 z-1 bg-black/40"></div>
       
-      {/* Círculos de luz de fondo (Efectos de diseño BIZ) */}
       <div className="absolute z-2 top-[-10%] left-[-10%] w-[50%] h-[50%] bg-secondario rounded-full blur-[120px] opacity-20 animate-pulse"></div>
       <div className="absolute z-2 bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-secondario rounded-full blur-[120px] opacity-20"></div>
 
       <Reveal>
-        <div className="container mx-auto px-6 relative z-10 text-center">
-          {/* Badge pequeño - Estilo BIZ */}
-          <span className="m-auto w-fit flex justify-center items-center px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider bg-green-400/10 border border-green-400/20 rounded-full text-white">
-            Una experiencia impulsada por <span className='ml-2 text-2xl text-yellow-400 font-bold'>BIZ</span>
+        <div className="container mx-auto px-6 relative z-10 text-center flex flex-col items-center justify-center h-full">
+          
+          {/* Logo de Zona Fest - Tamaño reducido para que quepa todo */}
+          <img 
+            src="/ZonaFestLogo_SinFondo.png" 
+            alt="Logo Zona Fest" 
+            className="w-32 md:w-40 h-auto mb-4 drop-shadow-2xl" 
+          />
+
+          {/* Badge pequeño */}
+          <span className="px-4 py-1 flex justify-center items-center text-xs font-semibold tracking-wider bg-green-400/10 border border-green-400/20 rounded-full text-white mb-6">
+            Una experiencia impulsada por <span className='ml-2 text-xl text-yellow-400 font-bold'>BIZ</span>
           </span>
 
-          {/* Título Principal Impactante */}
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter leading-tight mb-8 text-white">
-            VIVE LA PASIÓN <br />
+          {/* Título Principal - Ajustado para pantallas pequeñas */}
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-tight mb-6 text-white">
+            ¡VIVE LA PASIÓN! <br />
             <span className="bg-clip-text text-transparent bg-linear-to-r from-primario via-secondario to-primario">
               COMO NUNCA
             </span>
           </h1>
 
           {/* Descripción */}
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-terciario mb-10 leading-relaxed drop-shadow-lg">
+          <p className="max-w-xl mx-auto text-base md:text-lg text-terciario mb-8 leading-relaxed drop-shadow-lg">
             El lugar definitivo para los verdaderos fans del fútbol.
             <br />
-            Una experiencia única e inolvidable para tu municipio.
+            Una experiencia única para tu municipio.
           </p>
 
           {/* Botones de Acción */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button 
               onClick={scrollToVideo}
-              className="px-8 py-4 bg-terciario text-black font-bold rounded-full hover:text-terciario hover:bg-primario transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
+              className="px-6 py-3 bg-terciario text-black font-bold rounded-full hover:text-terciario hover:bg-primario transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
               Ver más
             </button>
             
@@ -61,7 +64,7 @@ export default function Hero() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 border border-white/20 bg-white/5 backdrop-blur-md font-bold rounded-full hover:bg-white/10 transition-all w-full sm:w-auto text-white text-center"
+              className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md font-bold rounded-full hover:bg-white/10 transition-all w-full sm:w-auto text-white text-center"
             >
               Contactar
             </a>

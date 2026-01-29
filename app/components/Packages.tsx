@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, ArrowRight, Zap, Trophy, Crown } from 'lucide-react';
+import { Check, Zap, Trophy, Crown } from 'lucide-react';
 import { Reveal } from "./Reveal";
 
 const paquetes = [
@@ -28,48 +28,40 @@ const whatsappUrl = "https://wa.me/5214272134002?text=Hola%20BIZ!%20Me%20interes
 
 export default function PaquetesBIZ() {
   return (
-    <section className="py-24 bg-terciario text-primario">
+    <section className="py-24 bg-terciario text-primario overflow-hidden">
       
     <Reveal>
       <div className="container mx-auto px-6">
         
-        {/* Encabezado idéntico al que te funcionó */}
+        {/* Encabezado */}
         <div className="mb-16">
           <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4">
             NUESTROS <span className="text-secondario">MODELOS</span>
           </h2>
           <p className="text-primario max-w-xl font-bold uppercase tracking-widest text-sm">
-            Infraestructura de élite {/*para eventos municipales masivos*/}.
+            Infraestructura de élite para el proyecto BIZ.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Carrusel con animación de sugerencia (Bounce) en móvil */}
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-8 scrollbar-hide animate-in fade-in slide-in-from-right-10 duration-1000">
           {paquetes.map((p, i) => (
             <div 
               key={i} 
-              className="flex flex-col bg-white rounded-3xl border border-gray-100 shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+              className="min-w-[85%] md:min-w-0 flex flex-col bg-white rounded-3xl border border-gray-100 shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 snap-center"
             >
               {/* HEADER VERDE */}
               <div className="bg-primario h-32 relative flex justify-center items-center">
                 <h3 className="text-3xl font-black italic text-center mb-8 uppercase tracking-tight text-white">
                   {p.nombre}
                 </h3>
-                {/* Círculo del icono flotando */}
                 <div className={`w-20 h-20 ${p.color} rounded-full border-4 border-secondario shadow-xl flex items-center justify-center absolute -bottom-10`}>
                   {p.icon}
                 </div>
-                
-                {/*p.popular && (
-                  <span className="absolute top-4 right-4 bg-yellow-400 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase">
-                    Popular
-                  </span>
-                )*/}
               </div>
 
               {/* CONTENIDO */}
               <div className="px-8 pt-16 pb-10 flex flex-col grow">
-
-                {/* LISTA ALINEADA (El bloque se centra, el texto va a la izquierda) */}
                 <div className="flex justify-center mb-10 grow">
                   <ul className="inline-block text-left space-y-4">
                     {p.caracteristicas.map((feat, idx) => (
@@ -80,8 +72,7 @@ export default function PaquetesBIZ() {
                     ))}
                   </ul>
                 </div>
-
-                {/* BOTÓN (Usando el estilo de View More de tu imagen) */}                
+              
                 <a 
                   href={whatsappUrl}
                   target="_blank"
@@ -93,6 +84,13 @@ export default function PaquetesBIZ() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Indicador visual simple solo para móvil */}
+        <div className="flex justify-center gap-2 mt-4 md:hidden">
+            <div className="w-2 h-2 rounded-full bg-secondario animate-pulse"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-300"></div>
+            <div className="w-2 h-2 rounded-full bg-gray-300"></div>
         </div>
       </div>
     </Reveal>

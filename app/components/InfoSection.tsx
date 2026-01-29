@@ -13,7 +13,7 @@ export default function InfoSection() {
           {/* Encabezado de la sección */}
           <div className="text-center mb-16">
             <h2 className="text-4xl font-black uppercase tracking-tighter mb-4">
-              Solución Integral para su <span className="text-secondario">Municipio</span>
+              Solución Integral para tu <span className="text-secondario">Municipio</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Llevamos la emoción de la fiesta más grande del fútbol a las plazas públicas con una infraestructura de primer nivel, operada por expertos.
@@ -21,7 +21,7 @@ export default function InfoSection() {
           </div>
 
           {/* Grid de Servicios/Tarjetas */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             
             {/* Tarjeta 1: Pantallas */}
             <div className="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
