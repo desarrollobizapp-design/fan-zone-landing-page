@@ -19,7 +19,7 @@ export default function QueEsZonaFest() {
           
           {/* Columna de Texto - Reducimos paddings en móvil */}
           <div className="space-y-6 md:space-y-10 order-2 lg:order-1">
-            <div className="p-5 md:p-8 group border-l-4 md:border-l-6 bg-green-100 rounded-2xl border-white/5 pl-6 hover:border-secondario transition-colors">
+            <div className="p-5 md:p-8 group border-l-4 md:border-l-6 bg-secondario/20 rounded-2xl border-white/5 pl-6 hover:border-secondario transition-colors">
               <h3 className="text-xl md:text-2xl font-bold text-secondario mb-2">Modelo Integral</h3>
               <p className="text-primario text-sm md:text-base leading-relaxed">
                 Diseñamos una solución 360° que abarca desde el montaje técnico hasta la gestión de audiencias. 
@@ -27,7 +27,7 @@ export default function QueEsZonaFest() {
               </p>
             </div>
 
-            <div className="p-5 md:p-8 group border-l-4 md:border-l-6 bg-green-100 rounded-2xl border-white/5 pl-6 hover:border-secondario transition-colors">
+            <div className="p-5 md:p-8 group border-l-4 md:border-l-6 bg-secondario/20 rounded-2xl border-white/5 pl-6 hover:border-secondario transition-colors">
               <h3 className="text-xl md:text-2xl font-bold text-secondario mb-2">Operación Centralizada</h3>
               <p className="text-primario text-sm md:text-base leading-relaxed">
                 Coordinamos cada detalle de la producción, sonido y logística desde un solo mando operativo, 
@@ -45,7 +45,7 @@ export default function QueEsZonaFest() {
               </p>
             </div>
 
-            <div className="p-5 md:p-8 group border-l-4 md:border-l-6 bg-green-100 rounded-2xl border-white/5 pl-6 hover:border-secondario transition-colors">
+            <div className="p-5 md:p-8 group border-l-4 md:border-l-6 bg-secondario/20 rounded-2xl border-white/5 pl-6 hover:border-secondario transition-colors">
               <h3 className="text-xl md:text-2xl font-bold text-secondario mb-2">El estadio en tu municipio</h3>
               <p className="text-primario text-sm md:text-base leading-relaxed">
                 Llevamos la atmósfera de los mejores estadios a las plazas de forma <span className="text-primario font-semibold italic"> segura y organizada</span>.
