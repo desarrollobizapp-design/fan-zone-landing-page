@@ -60,9 +60,9 @@ export default function QueEsZonaFest() {
               <img 
                 src="https://dbdzlutmtlpbiern.public.blob.vercel-storage.com/zonaFestNoche.jpeg" 
                 alt="Evento Zona Fest de noche" 
-                className="w-full h-64 md:h-[450px] object-cover"
+                className="w-full h-64 md:h-112.5 object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/60 to-transparent"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-zinc-950/60 to-transparent"></div>
             </div>
             
             {/* Imagen secundaria - Solo visible en tablets y desktop para no amontonar en móvil */}

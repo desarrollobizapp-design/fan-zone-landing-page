@@ -48,7 +48,7 @@ export default function Escalabilidad() {
             {upgrades.map((item, index) => (
               <div 
                 key={index} 
-                className="group p-4 md:p-8 bg-primario border border-secondario rounded-2xl md:rounded-3xl hover:bg-secondario transition-all duration-300 hover:-translate-y-2 flex flex-col items-center text-center min-h-[160px] md:min-h-[220px] justify-center"
+                className="group p-4 md:p-8 bg-primario border border-secondario rounded-2xl md:rounded-3xl hover:bg-secondario transition-all duration-300 hover:-translate-y-2 flex flex-col items-center text-center min-h-40 md:min-h-55 justify-center"
               >
                 {/* Contenedor de Icono */}
                 <div className="border-secondario border-2 w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-white/5 flex items-center justify-center mb-3 md:mb-6 group-hover:scale-110 transition-transform group-hover:border-primario">

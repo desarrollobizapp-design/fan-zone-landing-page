@@ -54,7 +54,7 @@ export default function Hero() {
           </p>
 
           {/* Botones de Acción - Grid de 2 columnas en móviles muy pequeños o columna completa */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-[300px] sm:max-w-none">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-75 sm:max-w-none">
             <button 
               onClick={scrollToVideo}
               className="px-8 py-3 bg-terciario text-black font-bold rounded-full hover:text-terciario hover:bg-primario transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
