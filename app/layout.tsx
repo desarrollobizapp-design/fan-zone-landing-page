@@ -4,14 +4,15 @@ import "./globals.css";
 
 import Footer from './components/Footer';
 
+// Configuramos las fuentes
 const geistSans = Geist({
-  variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: 'swap', // Esto asegura que el texto se vea mientras carga la fuente
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -42,13 +43,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      {/* ALERTA: Aquí aplicamos 'geistSans.className' directamente. 
+          Esto obliga a todo el proyecto a usar esa fuente sin configurar Tailwind.
+      */}
+      <body className={`${geistSans.className} antialiased`}>
         {children}
-
-      <Footer/>
-
+        <Footer/>
       </body>
     </html>
   );
