@@ -40,7 +40,7 @@ export default function PaquetesBIZ() {
             NUESTROS <span className="text-secondario">MODELOS</span>
           </h2>
           <p className="text-primario max-w-xl font-bold uppercase tracking-widest text-[10px] md:text-sm opacity-80">
-            Infraestructura de élite para el proyecto BIZ.
+            Infraestructura de élite para ZONA FEST.
           </p>
         </div>
 

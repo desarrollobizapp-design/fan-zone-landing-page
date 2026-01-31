@@ -10,7 +10,7 @@ export default function VideoExperience() {
           <div id="video-experience" className="max-w-4xl mx-auto">
             
             <div className="mb-0 md:mb-0 flex items-center justify-between pb-0">
-              <h2 className="text-3xl sm:text-3xl md:text-5xl font-black text-primario tracking-tighter uppercase italic leading-none">
+              <h2 className="text-3xl sm:text-3xl md:text-5xl font-black text-primario tracking-tighter uppercase leading-none">
                 Vívelo en <span className="text-secondario">Grande</span>
               </h2>
 
